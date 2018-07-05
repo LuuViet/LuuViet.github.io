@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>PC Tree</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!--Navigation-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="update.html">Update</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Main Article-->
+
+    <!--Nav Article-->
+    <section class="main-article">
+      <nav class="side-nav">
+        <ul>
+          <li><a href="instruction.html">Instruction</a></li>
+          <li><a href="datasheet.html">Datasheet</a></li>
+          <li><a href="document.html">QIC Doc</a></li>
+          <li><a href="reference.html">Reference</a></li>
+          <li><a href="about-global.html">Global View</a></li>
+          <li><a href="about-hvn.html">About HVN</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="submit.html">Submit</a></li>
+        </ul>
+      </nav>
+
+      <!--Article-content-->
+      <div class="seg-article">
+        <div class="article-content">
+            <h2>PC List</h2>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <ul class="tree">
+    <li>
+      <a class="expand">Common</a>
+    </li>
+    <li>
+      <a class="expand">Cub type</a>
+      <ul>
+        <li>
+          <a class="expand">PC List</a>
+          <ul>
+            <li>
+              <a class="expand" href="#">KWY Wave Alpha</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K89 Wave Alpha</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K03 Wave RSX</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K90 Wave RSX</a>
+            </li>
+            <li>
+              <a class="expand" href="#">Blade</a>
+              <li>
+                <a class="expand" href="#">KYZ Future</a>
+              </li>
+            </li>
+            <li>
+              <a class="expand" href="#">K73 Future</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K76 Superdream</a>
+            </li>
+          <li>
+            <a class="expand" href="#">K56 Winner</a>
+          </li>
+        <li>
+          <a class="expand" href="#">K26 MSX125</a>
+        </li>
+      <li>
+        <a class="expand" href="#">K76 Superdream</a>
+      </li>
+
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <a class="expand">Scooter type</a>
+      <ul>
+        <li>
+          <a class="expand">PC List</a>
+          <ul>
+            <li>
+              <a class="expand" href="#">K12 LEAD</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K27 AIR BLADE</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K66 AIR BLADE</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K29 SH MODE</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K44 VISION</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K01/K02 SH125/150</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K77/K78 SH125/150</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K52	SH300i</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K35	PCX125</a>
+            </li>
+            <li>
+              <a class="expand" href="#">K96/97	PCX125/150</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+
+    <li>
+      <a class="expand">Others</a>
+      <ul>
+        <li>
+          <a class="expand">PC List</a>
+          <ul>
+            <li>
+              <a class="expand" href="#">K87F Rebel 300</a>
+            </li>
+            <li>
+              <a class="expand" href="#">MKGA Rebel 500</a>
+            </li>
+            <li>
+              <a class="expand" href="#">CB650</a>
+            </li>
+            <li>
+              <a class="expand" href="#">CB500</a>
+            </li>
+            <li>
+              <a class="expand" href="#">CB1000</a>
+            </li>
+            <li>
+              <a class="expand" href="#">CBR1000</a>
+            </li>
+            <li>
+              <a class="expand" href="#">GL1800</a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+
+
+
+  </ul>
+        </div>
+      </div>
+
+
+    </section>
+    <video controls autoplay preload="none" style="width:1000px;">
+    <source src="ppt/1.mp4" type="video/mp4" />
+    <p>Your browser does not support HTML5 Video.</p>
+    </video>
+    <!--Script tree -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $('.expand').click(function() {
+  $('ul', $(this).parent()).eq(0).toggle();
+});
+    </script>
+    <!--Footers-->
+    <footer>
+      <p>BV021560 &copy; 2018</p>
+    </footer>
+
+  </div>
+  <!--Wrapper end-->
+
+
+
+</body>
+
+</html>

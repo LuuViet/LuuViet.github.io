@@ -1,0 +1,32 @@
+if (typeof (SiebelAppFacade.Postload) == "undefined") {
+    Namespace('SiebelAppFacade.Postload');
+
+    (function(){
+        SiebelApp.EventManager.addListner( "postload", OnPostload, this );
+        function OnPostload( ){
+            try{
+                SiebelJS.Log("Loaded");
+				if($(".lblPosition").length==0){
+var infoLoc = $("#MsgLayer")
+infoLoc.append($("<div>").addClass("lblPosition"));
+}
+var bsTest = SiebelApp.S_App.GetService("TMI GetActivePosition");
+bsTest.InvokeMethod("GetPosition", null);
+$(".lblPosition").html("<b><font color=white>Active Position :</font> <font color=YELLOW><i>" +SiebelApp.S_App.GetProfileAttr("PositionDisplay") +"</i></font></b>");
+$("#MsgLayer").css({
+     
+     maxWidth: "100%"
+ });
+            }
+            catch(error)
+            {
+                //No-Op
+            }
+			
+			
+			
+        }
+    }());	
+	
+}
+
