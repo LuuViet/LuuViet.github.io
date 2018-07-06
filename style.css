@@ -226,7 +226,7 @@ img {
   display: grid;
   padding: 2rem;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .article-content a:hover {
