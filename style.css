@@ -95,7 +95,8 @@ img {
 .top-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: 'showcase showcase top-box-a top-box-b' 'showcase showcase top-box-c top-box-d';
+  grid-template-areas: 'showcase showcase top-box-a top-box-b'
+                      'showcase showcase top-box-c top-box-d';
 }
 
 /* Main Article */
@@ -103,7 +104,8 @@ img {
 .main-article {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: 'side-nav seg-article seg-article' 'side-nav seg-article seg-article';
+  grid-template-areas: 'side-nav seg-article seg-article'
+                      'side-nav seg-article seg-article';
 }
 
 .side-nav {
@@ -226,7 +228,7 @@ img {
   display: grid;
   padding: 2rem;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .article-content a:hover {
